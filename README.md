@@ -1,11 +1,11 @@
 # Closing the Tsirelson Loophole in Relativistic Quantum Field Theory
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23202937.svg)](https://doi.org/10.5281/zenodo.23202937)
 
 Code, data, figures and manuscript for
 
 > **R. Chen**, *Closing the Tsirelson Loophole in Relativistic Quantum Field Theory: Split Inclusions, Hyperfinite
-> Local Algebras, and the Effective Dimension of the Vacuum* (2026). DOI: [10.5281/zenodo.XXXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXXX)
+> Local Algebras, and the Effective Dimension of the Vacuum* (2026). DOI: [10.5281/zenodo.23202937](https://doi.org/10.5281/zenodo.23202937)
 
 ## Summary
 
@@ -72,8 +72,8 @@ pdflatex Chen_2026_QFT_Tsirelson_Loophole.tex
   title  = {Closing the Tsirelson Loophole in Relativistic Quantum Field Theory: Split Inclusions, Hyperfinite
             Local Algebras, and the Effective Dimension of the Vacuum},
   year   = {2026},
-  doi    = {10.5281/zenodo.XXXXXXXX},
-  url    = {https://doi.org/10.5281/zenodo.XXXXXXXX}
+  doi    = {10.5281/zenodo.23202937},
+  url    = {https://doi.org/10.5281/zenodo.23202937}
 }
 ```
 
