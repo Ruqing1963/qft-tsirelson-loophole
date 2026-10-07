@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Closing the Tsirelson Loophole in Relativistic Quantum Field Theory: code, data and figures"
+authors:
+  - family-names: Chen
+    given-names: Ruqing
+    affiliation: "GUT Geoservice Inc., Montreal"
+    email: ruqing@hotmail.com
+repository-code: "https://github.com/Ruqing1963/qft-tsirelson-loophole"
+doi: 10.5281/zenodo.XXXXXXXX
+date-released: 2026-10-07
+license: MIT
+keywords:
+  - Tsirelson problem
+  - MIP*=RE
+  - algebraic quantum field theory
+  - split property
+  - hyperfinite von Neumann algebras
+  - Bell inequalities
+  - de Sitter space
+  - smooth max-entropy
+  - harmonic chain
+  - actual infinity
+preferred-citation:
+  type: article
+  title: "Closing the Tsirelson Loophole in Relativistic Quantum Field Theory: Split Inclusions, Hyperfinite Local Algebras, and the Effective Dimension of the Vacuum"
+  authors:
+    - family-names: Chen
+      given-names: Ruqing
+      affiliation: "GUT Geoservice Inc., Montreal"
+  year: 2026
+  doi: 10.5281/zenodo.XXXXXXXX

@@ -1,0 +1,37 @@
+﻿[A,B] harmonic chain vacuum, ring of N = 4000 sites; block of l sites
+    m =  1.00, l =    2: S =   0.159 bits; log2 d(eps) =   1.00,   2.32,   3.00  for eps = 1e-02, 1e-04, 1e-06
+    m =  1.00, l =    4: S =   0.161 bits; log2 d(eps) =   1.00,   2.32,   3.46  for eps = 1e-02, 1e-04, 1e-06
+    m =  1.00, l =    8: S =   0.161 bits; log2 d(eps) =   1.00,   2.58,   3.46  for eps = 1e-02, 1e-04, 1e-06
+    m =  1.00, l =   16: S =   0.161 bits; log2 d(eps) =   1.00,   2.58,   3.58  for eps = 1e-02, 1e-04, 1e-06
+    m =  1.00, l =   32: S =   0.161 bits; log2 d(eps) =   1.00,   2.58,   3.58  for eps = 1e-02, 1e-04, 1e-06
+    m =  1.00, l =   64: S =   0.161 bits; log2 d(eps) =   1.00,   2.58,   3.58  for eps = 1e-02, 1e-04, 1e-06
+    m =  1.00, l =  128: S =   0.161 bits; log2 d(eps) =   1.00,   2.58,   3.58  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.10, l =    2: S =   0.867 bits; log2 d(eps) =   2.00,   3.46,   4.32  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.10, l =    4: S =   0.995 bits; log2 d(eps) =   2.32,   4.09,   5.39  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.10, l =    8: S =   1.075 bits; log2 d(eps) =   2.58,   4.46,   5.95  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.10, l =   16: S =   1.106 bits; log2 d(eps) =   2.58,   4.64,   6.27  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.10, l =   32: S =   1.111 bits; log2 d(eps) =   2.58,   4.81,   6.39  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.10, l =   64: S =   1.111 bits; log2 d(eps) =   2.58,   4.81,   6.43  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.10, l =  128: S =   1.111 bits; log2 d(eps) =   2.58,   4.86,   6.43  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.01, l =    2: S =   1.306 bits; log2 d(eps) =   2.58,   3.91,   4.91  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.01, l =    4: S =   1.531 bits; log2 d(eps) =   2.81,   4.75,   6.13  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.01, l =    8: S =   1.737 bits; log2 d(eps) =   3.32,   5.39,   6.97  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.01, l =   16: S =   1.918 bits; log2 d(eps) =   3.58,   5.95,   7.67  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.01, l =   32: S =   2.062 bits; log2 d(eps) =   3.91,   6.43,   8.28  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.01, l =   64: S =   2.159 bits; log2 d(eps) =   4.17,   6.77,   8.75  for eps = 1e-02, 1e-04, 1e-06
+    m =  0.01, l =  128: S =   2.204 bits; log2 d(eps) =   4.25,   6.99,   9.05  for eps = 1e-02, 1e-04, 1e-06
+    m = 0.01, l = 64 (S = 2.159 bits): exact log2 d(eps) and the product bound sum_k log2 n_k(eps)
+      eps = 1.0e-01: log2 d =   2.32, bound =   4.58 (8 modes)
+      eps = 1.0e-02: log2 d =   4.17, bound =   6.91 (9 modes)
+      eps = 1.0e-03: log2 d =   5.58, bound =   9.98 (10 modes)
+      eps = 1.0e-04: log2 d =   6.77, bound =  12.15 (11 modes)
+      eps = 1.0e-05: log2 d =   7.81, bound =  14.21 (12 modes)
+      eps = 1.0e-06: log2 d =   8.75, bound =  16.61 (13 modes)
+      eps = 1.0e-07: log2 d =   9.59, bound =  18.88 (14 modes)
+      eps = 1.0e-08: log2 d =  10.38, bound =  20.51 (15 modes)
+      eps = 1.0e-09: log2 d =  11.11, bound =  23.15 (16 modes)
+      eps = 1.0e-10: log2 d =  11.80, bound =  25.47 (19 modes)
+      eps = 1.0e-11: log2 d =  12.45, bound =  27.19 (42 modes)
+      eps = 1.0e-12: log2 d =  13.07, bound =  30.72 (42 modes)
+    local slope d log2 d / d log2(1/eps): 0.602 at eps ~ 1e-1, 0.250 at eps ~ 1e-6, 0.186 at eps ~ 1e-12 (decreasing: growth slower than any power)
+figures written to figures/, data to data/
