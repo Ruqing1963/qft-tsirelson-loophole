@@ -169,8 +169,10 @@ $\{B^y_b\}\subseteq\M'$ Bob's POVMs. Then $p(a,b|x,y)=\omega(A^x_aB^y_b)$ lies i
 \end{theorem}
 
 \begin{proof}
-Take $\alpha_k,\beta_k$ as above. Since $\beta_k:M_{n_k}\to\M$ is completely positive and its range commutes with $\M'$, the map
-$X\otimes Y\mapsto\beta_k(X)Y$ is completely positive on $M_{n_k}\otimes\M'$~\cite{Paulsen}. Hence
+Take $\alpha_k,\beta_k$ as above. Since $M_{n_k}$ is finite-dimensional, hence nuclear, the algebraic tensor product
+$M_{n_k}\odot\M'$ carries a unique C$^*$-norm, and we write $M_{n_k}\otimes\M'$ for its completion. Since $\beta_k:M_{n_k}\to\M$ is
+completely positive and its range commutes with $\M'$, the map $X\otimes Y\mapsto\beta_k(X)Y$ extends to a completely positive map on
+$M_{n_k}\otimes\M'$~\cite{Paulsen}. Hence
 $\varphi_k(X\otimes Y)=\omega(\beta_k(X)Y)$ is a state on $M_{n_k}\otimes\M'$. The operators $\tilde A^x_a=\alpha_k(A^x_a)$ form POVMs in $M_{n_k}$ because
 $\alpha_k$ is ucp. Consider the strategy given by the GNS representation of $\varphi_k$, with Alice measuring $\tilde A^x_a$ and Bob
 measuring $B^y_b$. Its correlation is
@@ -195,7 +197,8 @@ In a local net with hyperfinite local algebras, every Bell correlation between l
 separated regions $O_A,O_B$ lies in $\Cqa$. If only the split property is known, the same holds whenever $O_A$ has a
 neighbourhood spacelike to $O_B$. In either case no Bell functional separating $\Cqa$ from $\Cqc$ can be violated by local
 measurements in spacelike separated regions. Among the four possibilities of~\cite{CabelloQuintinoKleinmann}, such
-theories therefore exclude the fourth, in which correlations in $\Cqc\setminus\Cqa$ are realised with spacelike separation. They
+theories therefore exclude the fourth, in which correlations in $\Cqc\setminus\Cqa$ are realised by local observers in spacelike
+separated regions. They
 are silent on the second and third, which involve measurements on a single system or without spacelike separation.
 \end{corollary}
 
@@ -250,6 +253,9 @@ bounds the total-variation distance of all outcome distributions. The bound on $
 with $\varepsilon_G$ replaced by $\delta$.
 \end{proof}
 
+The smoothing parameter enters quadratically. For $\varepsilon_A=\varepsilon_B=\varepsilon$ the gentle-measurement bound gives $\delta\approx4\sqrt\varepsilon$, while
+$N$ independent rounds resolve $\delta\sim N^{-1/2}$. The relevant smoothing is therefore $\varepsilon\sim\delta^2/16\sim1/N$, not $N^{-1/2}$.
+
 In QFT the reduced state on a local algebra is not a density operator, since the algebra is of type III. The split
 property supplies one: the vacuum restricted to the type I factor $\N$ of Theorem~\ref{thm:split} is normal and has a density
 operator. Proposition~\ref{prop:compress} applies to it, and the effective dimension depends on the size of the gap between
@@ -263,6 +269,14 @@ correlators~\cite{AudenaertEtAl}. The spectrum of $\rho_A$ is the set of product
 exactly by best-first enumeration of occupation vectors. Each multiset of excitations is generated once, by
 incrementing only mode indices not smaller than the last one incremented. Modes with $q_k<10^{-3}\varepsilon/l$ are dropped,
 which changes the captured weight by less than $10^{-3}\varepsilon$.
+
+The single-particle entanglement energies $e_k=\ln(1/q_k)$ explain why few modes matter~\cite{PeschelEisler}. They form
+two towers, one for each endpoint of the block, which is the one-dimensional ``area''. Within a tower they grow
+approximately linearly in $k$, with a spacing set by the mass: $9.24$ for $m=1$, $4.50$ for $m=0.1$ and about $2.9$ for $m=0.01$ at
+$l=64$ and $128$. Hence $q_k$ decays exponentially along each tower. The number of modes with $q_k>10^{-3}\varepsilon/l$ is $4$ and $6$ for
+$m=1$ at $\varepsilon=10^{-2}$ and $10^{-6}$, independent of $l$, and $10$ and $15$ for $m=0.01$ at $l=128$. It grows like $\ln(1/\varepsilon)$
+divided by the spacing, and so it is controlled by the boundary and the correlation length, not by the block volume.
+Towards criticality the spacing decreases slowly, and the count grows correspondingly.
 
 \begin{figure}[t]
 \centering
@@ -364,6 +378,7 @@ The script \texttt{qft\_effective\_dimension.py}, the data (CSV), the figure and
 \bibitem{BrownOzawa} N.~P.~Brown, N.~Ozawa, \emph{C$^*$-Algebras and Finite-Dimensional Approximations}, Graduate Studies in Mathematics 88, American Mathematical Society (2008).
 \bibitem{RennerWolf} R.~Renner, S.~Wolf, ``Smooth R\'enyi entropy and applications'', Proc.\ IEEE Int.\ Symp.\ Inf.\ Theory (2004) 233.
 \bibitem{Winter} A.~Winter, ``Coding theorem and strong converse for quantum channels'', IEEE Trans.\ Inf.\ Theory 45 (1999) 2481--2485.
+\bibitem{PeschelEisler} I.~Peschel, V.~Eisler, ``Reduced density matrices and entanglement entropy in free lattice models'', J.\ Phys.\ A 42 (2009) 504003, arXiv:0906.1663.
 \bibitem{AudenaertEtAl} K.~Audenaert, J.~Eisert, M.~B.~Plenio, R.~F.~Werner, ``Entanglement properties of the harmonic chain'', Phys.\ Rev.\ A 66 (2002) 042327, arXiv:quant-ph/0205025.
 \end{thebibliography}
 

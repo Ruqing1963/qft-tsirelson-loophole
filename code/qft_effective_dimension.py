@@ -105,6 +105,15 @@ def main():
             print(f"    m = {m:5.2f}, l = {l:4d}: S = {S:7.3f} bits; log2 d(eps) = "
                   + ", ".join(f"{np.log2(x):6.2f}" if x == x else "  >cap" for x in ds)
                   + f"  for eps = {', '.join(f'{e:.0e}' for e in epss)}")
+    print("    single-particle entanglement energies e_k = ln(1/q_k) (two towers, one per block endpoint):")
+    for m in masses:
+        X, P = vacuum_correlators(N, m)
+        for l in (64, 128):
+            q = block_modes(X, P, l)
+            e = -np.log(q[:6])
+            act = [int(np.sum(q > 1e-3 * eps / l)) for eps in (1e-2, 1e-6)]
+            print(f"      m = {m:5.2f}, l = {l:3d}: e_1..e_6 = {np.round(e, 2)}; tower spacing e_3 - e_1 = {e[2] - e[0]:.2f}; "
+                  f"modes with q_k > 1e-3 eps/l: {act[0]} (eps = 1e-2), {act[1]} (eps = 1e-6)")
     R = np.array(rows)
     savedata("block_effective_dimension", ["mass", "l", "S_bits"] + [f"log2_d_eps_{e:.0e}" for e in epss],
              [R[:, i] for i in range(R.shape[1])],

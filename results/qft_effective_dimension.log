@@ -20,6 +20,13 @@
     m =  0.01, l =   32: S =   2.062 bits; log2 d(eps) =   3.91,   6.43,   8.28  for eps = 1e-02, 1e-04, 1e-06
     m =  0.01, l =   64: S =   2.159 bits; log2 d(eps) =   4.17,   6.77,   8.75  for eps = 1e-02, 1e-04, 1e-06
     m =  0.01, l =  128: S =   2.204 bits; log2 d(eps) =   4.25,   6.99,   9.05  for eps = 1e-02, 1e-04, 1e-06
+    single-particle entanglement energies e_k = ln(1/q_k) (two towers, one per block endpoint):
+      m =  1.00, l =  64: e_1..e_6 = [ 4.62  4.62 13.86 13.86 23.1  23.1 ]; tower spacing e_3 - e_1 = 9.24; modes with q_k > 1e-3 eps/l: 4 (eps = 1e-2), 6 (eps = 1e-6)
+      m =  1.00, l = 128: e_1..e_6 = [ 4.62  4.62 13.86 13.86 23.1  23.1 ]; tower spacing e_3 - e_1 = 9.24; modes with q_k > 1e-3 eps/l: 4 (eps = 1e-2), 6 (eps = 1e-6)
+      m =  0.10, l =  64: e_1..e_6 = [ 2.25  2.25  6.75  6.76 11.24 11.28]; tower spacing e_3 - e_1 = 4.50; modes with q_k > 1e-3 eps/l: 6 (eps = 1e-2), 11 (eps = 1e-6)
+      m =  0.10, l = 128: e_1..e_6 = [ 2.25  2.25  6.76  6.76 11.26 11.26]; tower spacing e_3 - e_1 = 4.50; modes with q_k > 1e-3 eps/l: 8 (eps = 1e-2), 12 (eps = 1e-6)
+      m =  0.01, l =  64: e_1..e_6 = [1.34 1.66 4.24 5.11 7.6  8.83]; tower spacing e_3 - e_1 = 2.90; modes with q_k > 1e-3 eps/l: 9 (eps = 1e-2), 13 (eps = 1e-6)
+      m =  0.01, l = 128: e_1..e_6 = [1.42 1.55 4.26 4.7  7.24 8.  ]; tower spacing e_3 - e_1 = 2.85; modes with q_k > 1e-3 eps/l: 10 (eps = 1e-2), 15 (eps = 1e-6)
     m = 0.01, l = 64 (S = 2.159 bits): exact log2 d(eps) and the product bound sum_k log2 n_k(eps)
       eps = 1.0e-01: log2 d =   2.32, bound =   4.58 (8 modes)
       eps = 1.0e-02: log2 d =   4.17, bound =   6.91 (9 modes)
