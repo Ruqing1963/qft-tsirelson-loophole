@@ -261,6 +261,17 @@ property supplies one: the vacuum restricted to the type I factor $\N$ of Theore
 operator. Proposition~\ref{prop:compress} applies to it, and the effective dimension depends on the size of the gap between
 the regions. For a lattice regularisation the block is itself a type I system.
 
+\begin{remark}[Continuum]
+Among the intermediate type I factors there is a canonical one, constructed by Doplicher and Longo from the modular
+conjugation of the relative commutant~\cite{DoplicherLongo}. The von Neumann entropy of the vacuum on it, the
+canonical entanglement entropy, is finite for the chiral net of finitely many free fermions~\cite{LongoXu} and for a
+broad class of conformal nets~\cite{PanebiancoWegener}. In the continuum limit it coincides with the reflected entropy
+of the two regions~\cite{DuttaFaulkner}, which has been computed for the two-dimensional Dirac field as a function of the
+cross-ratio~\cite{BuenoCasini}. The continuum version of $d_{\rho}(\varepsilon)$ is the smooth max-entropy of the same state. It is
+obtained from the same single-particle spectrum by replacing the von Neumann entropy with the counting function used
+above. We leave its evaluation as a function of the splitting distance to future work.
+\end{remark}
+
 \paragraph{Vacuum of a lattice free field.} Consider the harmonic chain
 $H=\tfrac12\sum_i[\pi_i^2+m^2\phi_i^2+(\phi_{i+1}-\phi_i)^2]$ on a ring of $4000$ sites, a lattice free scalar field, in its ground state. A
 block of $l$ sites is in a Gaussian state, a product of thermal modes with ratios $q_k=(\nu_k-\tfrac12)/(\nu_k+\tfrac12)$, where $\nu_k$ are
@@ -347,7 +358,8 @@ Three caveats bound these conclusions. First, they concern local measurements in
 that are not localised, or theories without the split property, for instance with too many local degrees of freedom,
 are not covered. Second, the hyperfiniteness theorem of~\cite{BDF} assumes a scaling limit, and Proposition~\ref{prop:dS}
 assumes injectivity of the static-patch QFT algebra. Third, Proposition~\ref{prop:product} is a statement about regularised
-blocks. In the continuum the effective dimension depends on the size of the split gap, which acts as a cutoff.
+blocks. In the continuum the effective dimension depends on the size of the split gap, which acts as a cutoff, and
+should be computed on the canonical splitting factor (Remark in Section~\ref{sec:effective}).
 
 Together with~\cite{Chen2026_certify}, the result is a coherent picture. Physics routinely uses infinite-dimensional
 Hilbert spaces and type III algebras. Yet the correlations that local measurements can produce in these frameworks
@@ -378,6 +390,10 @@ The script \texttt{qft\_effective\_dimension.py}, the data (CSV), the figure and
 \bibitem{BrownOzawa} N.~P.~Brown, N.~Ozawa, \emph{C$^*$-Algebras and Finite-Dimensional Approximations}, Graduate Studies in Mathematics 88, American Mathematical Society (2008).
 \bibitem{RennerWolf} R.~Renner, S.~Wolf, ``Smooth R\'enyi entropy and applications'', Proc.\ IEEE Int.\ Symp.\ Inf.\ Theory (2004) 233.
 \bibitem{Winter} A.~Winter, ``Coding theorem and strong converse for quantum channels'', IEEE Trans.\ Inf.\ Theory 45 (1999) 2481--2485.
+\bibitem{LongoXu} R.~Longo, F.~Xu, ``Von Neumann entropy in QFT'', Commun.\ Math.\ Phys.\ 381 (2021) 1031--1054, arXiv:1911.09390.
+\bibitem{PanebiancoWegener} L.~Panebianco, B.~Wegener, ``Entanglement entropy in CFT and modular nuclearity'', arXiv:2108.09074.
+\bibitem{DuttaFaulkner} S.~Dutta, T.~Faulkner, ``A canonical purification for the entanglement wedge cross-section'', JHEP 03 (2021) 178, arXiv:1905.00577.
+\bibitem{BuenoCasini} P.~Bueno, H.~Casini, ``Reflected entropy, symmetries and free fermions'', JHEP 05 (2020) 103, arXiv:2003.09546.
 \bibitem{PeschelEisler} I.~Peschel, V.~Eisler, ``Reduced density matrices and entanglement entropy in free lattice models'', J.\ Phys.\ A 42 (2009) 504003, arXiv:0906.1663.
 \bibitem{AudenaertEtAl} K.~Audenaert, J.~Eisert, M.~B.~Plenio, R.~F.~Werner, ``Entanglement properties of the harmonic chain'', Phys.\ Rev.\ A 66 (2002) 042327, arXiv:quant-ph/0205025.
 \end{thebibliography}
